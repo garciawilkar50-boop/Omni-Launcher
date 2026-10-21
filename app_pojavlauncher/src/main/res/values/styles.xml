@@ -16,6 +16,13 @@
         <item name="android:textSize">@dimen/_12ssp</item>
     </style>
 
+    <style name="OmniDialogTheme" parent="@style/Theme.AppCompat.DayNight.Dialog">
+        <item name="colorAccent">@color/omni_accent</item>
+        <item name="colorControlActivated">@color/omni_accent</item>
+        <item name="android:colorBackground">@color/omni_card</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
     <style name="LauncherFragment_Divider">
         <item name="android:layout_width">@dimen/padding_tiny</item>
         <item name="android:layout_height">0dp</item>
