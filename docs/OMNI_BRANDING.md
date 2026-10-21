@@ -11,19 +11,20 @@ This document tracks the visual rebrand on the Amethyst-Android codebase.
 - No gradients, excessive glow, or cluttered gamer UI
 - Keep gameplay controls and accessibility legible; do not sacrifice function for branding
 
-## Visual work completed on omni-branding
+## Visual pass completed on omni-branding
 - Updated release/debug display names and the app's short name to Omni Launcher / Omni.
-- Replaced the adaptive launcher icon with an original pixel-portal mark using the Omni green accent.
+- Replaced adaptive and legacy launcher icons with an original pixel-portal mark using the Omni green accent.
 - Rebuilt the launcher home layout with a brand header, Java Edition subtitle, cleaner spacing, card-style shortcuts, version/profile surface, and the existing prominent Play action.
-- Unified the color tokens and card/menu surfaces in graphite, off-white, gray, and muted green.
-- Applied the accent color to Android controls, selections, and settings theme.
-- Updated key user-facing crash, background-service, and storage/notification strings to use Omni branding.
+- Unified color tokens and card/menu surfaces in graphite, off-white, gray, and muted green.
+- Applied the accent color to Android controls, selections, dialogs, and settings theme.
+- Updated key user-facing crash, background-service, storage, and notification strings to use Omni branding.
+- Updated shared card surfaces used by profile, login, and installation flows so secondary screens inherit the new palette.
 - Kept the original application ID and provider authorities unchanged to avoid breaking data paths, app links, saved profiles, or file providers.
 
-## Next phase: implementation and verification
-1. Review launcher behavior and connect the new visual states to the existing profile/version data without duplicating controls or changing game launch behavior.
-2. Audit remaining user-facing strings and the non-adaptive legacy icon assets.
-3. Restyle remaining screens (profile editor, mod/installation screens, memory/performance settings, and touch-control editor) consistently.
+## Next phase: code and verification
+1. Inspect and preserve the existing launcher state flow; make sure the redesigned version/profile selector and Play action still bind to the existing behavior.
+2. Review navigation, profile/version selection, settings, installations/mod screens, and touch-control flows for regressions.
+3. Audit remaining user-facing references to upstream names while preserving legal notices, credits, and license texts.
 4. Run Android CI/build checks and resolve resource or compatibility errors.
 5. Test on a real Android device before producing an APK.
 
