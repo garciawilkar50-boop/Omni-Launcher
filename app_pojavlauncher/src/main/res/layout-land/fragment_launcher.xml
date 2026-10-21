@@ -10,6 +10,53 @@
     android:orientation="vertical"
     android:background="@color/background_app">
 
+    <View
+        android:id="@+id/omni_accent_bar"
+        android:layout_width="@dimen/_4sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:background="@drawable/omni_accent_pill"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/omni_brand_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:fontFamily="sans-serif-black"
+        android:letterSpacing="0.08"
+        android:text="OMNI LAUNCHER"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/_18ssp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/omni_accent_bar"
+        app:layout_constraintTop_toTopOf="@id/omni_accent_bar" />
+
+    <TextView
+        android:id="@+id/omni_brand_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:letterSpacing="0.1"
+        android:text="JAVA EDITION  ·  ANDROID"
+        android:textColor="@color/secondary_text"
+        android:textSize="@dimen/_8ssp"
+        app:layout_constraintStart_toEndOf="@id/omni_accent_bar"
+        app:layout_constraintTop_toBottomOf="@id/omni_brand_title" />
+
+    <View
+        android:id="@+id/omni_hero_divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:background="@color/divider"
+        app:layout_constraintTop_toBottomOf="@id/omni_accent_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
     <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -17,7 +64,7 @@
         app:layout_constraintBottom_toTopOf="@id/_background_display_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/omni_hero_divider">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
