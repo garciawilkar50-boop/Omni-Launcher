@@ -4,13 +4,20 @@
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
-    <!-- Pixel portal built from separate blocks for broad Android compatibility. -->
-    <path android:fillColor="@color/omni_accent" android:pathData="M24,24 H84 V36 H24 Z" />
-    <path android:fillColor="@color/omni_accent" android:pathData="M24,72 H84 V84 H24 Z" />
-    <path android:fillColor="@color/omni_accent" android:pathData="M24,36 H36 V72 H24 Z" />
-    <path android:fillColor="@color/omni_accent" android:pathData="M72,36 H84 V72 H72 Z" />
-    <path android:fillColor="#F5F5F5" android:pathData="M43,43 H53 V53 H43 Z" />
-    <path android:fillColor="#F5F5F5" android:pathData="M57,43 H67 V53 H57 Z" />
-    <path android:fillColor="#F5F5F5" android:pathData="M43,57 H53 V67 H43 Z" />
-    <path android:fillColor="@color/omni_accent" android:pathData="M57,57 H67 V67 H57 Z" />
+    <!-- EnderCore Client: pixel-art emerald cube and EC-inspired core. -->
+    <path android:fillColor="#071007" android:pathData="M0,0 H108 V108 H0 Z" />
+    <path android:fillColor="#123016" android:pathData="M54,13 L91,34 V74 L54,95 L17,74 V34 Z" />
+    <path android:fillColor="#1E5724" android:pathData="M54,13 L91,34 L54,55 L17,34 Z" />
+    <path android:fillColor="#0E2411" android:pathData="M17,34 L54,55 V95 L17,74 Z" />
+    <path android:fillColor="#16401A" android:pathData="M91,34 L54,55 V95 L91,74 Z" />
+    <path android:fillColor="#75F36D" android:pathData="M54,19 L81,35 L54,50 L27,35 Z" />
+    <path android:fillColor="#0B160B" android:pathData="M54,26 L70,35 L54,44 L38,35 Z" />
+    <path android:fillColor="#B3FF8C" android:pathData="M54,24 L64,30 L54,36 L44,30 Z" />
+    <path android:fillColor="#75F36D" android:pathData="M26,43 H37 V65 H48 V76 H26 Z" />
+    <path android:fillColor="#75F36D" android:pathData="M41,43 H48 V50 H41 Z" />
+    <path android:fillColor="#75F36D" android:pathData="M41,58 H48 V65 H41 Z" />
+    <path android:fillColor="#B3FF8C" android:pathData="M61,43 H81 V50 H68 V57 H78 V64 H68 V69 H81 V76 H61 Z" />
+    <path android:fillColor="#397F35" android:pathData="M54,55 H61 V86 H54 Z" />
+    <path android:fillColor="#2C6C2A" android:pathData="M20,73 L27,77 V84 L20,80 Z" />
+    <path android:fillColor="#2C6C2A" android:pathData="M81,77 L88,73 V80 L81,84 Z" />
 </vector>
