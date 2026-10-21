@@ -3,14 +3,14 @@
     <color name="control_button_color">#4CC4C4C4</color>
     <color name="control_button_pressed_color">#4D000000</color>
 
-    <!-- Omni Launcher palette: graphite, off-white and a restrained pixel green. -->
-    <color name="minebutton_color">#A3D977</color>
-    <color name="omni_accent">#A3D977</color>
-    <color name="omni_accent_pressed">#82B85A</color>
-    <color name="omni_card">#242424</color>
-    <color name="omni_card_stroke">#343434</color>
-    <color name="omni_surface">#202020</color>
-    <color name="background_app">#181818</color>
+    <!-- EnderCore Client palette: obsidian, graphite, and emerald green. -->
+    <color name="minebutton_color">#75F36D</color>
+    <color name="omni_accent">#75F36D</color>
+    <color name="omni_accent_pressed">#43B83C</color>
+    <color name="omni_card">#121612</color>
+    <color name="omni_card_stroke">#293629</color>
+    <color name="omni_surface">#171C17</color>
+    <color name="background_app">#0B0D0B</color>
     <color name="divider">#343434</color>
     <color name="background_overlay">#343434</color>
     <color name="background_status_bar">#181818</color>
