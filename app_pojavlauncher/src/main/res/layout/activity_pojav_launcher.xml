@@ -23,7 +23,7 @@
         android:layout_width="@dimen/_52sdp"
         android:layout_height="@dimen/_52sdp"
         android:background="@color/background_bottom_bar"
-        android:contentDescription="@string/mcl_option_settings"
+        android:contentDescription="@string/omni_settings_content_description"
         android:src="@drawable/ic_menu_settings"
         android:scaleType="fitCenter"
         android:padding="@dimen/_12sdp"
