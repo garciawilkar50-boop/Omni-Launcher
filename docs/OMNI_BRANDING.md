@@ -1,27 +1,31 @@
 # Omni Launcher — Branding and UI direction
 
-This document tracks the first rebranding pass on the Amethyst-Android codebase.
+This document tracks the visual rebrand on the Amethyst-Android codebase.
 
 ## Product direction
 - Name shown to users: **Omni Launcher**
-- Platform: Android, portrait-first launcher UI with landscape support retained for gameplay
+- Platform: Android; portrait-first launcher UI while preserving gameplay orientation support
 - Visual style: minimal, premium, gaming-focused
-- Palette: near-black and charcoal surfaces, white primary text, muted gray secondary text, soft pixel-green accent
-- Avoid gradients, excessive glow, or cluttered gamer UI
+- Palette: near-black and charcoal surfaces, off-white primary text, muted gray secondary text, soft pixel-green accent (#A3D977)
+- Rounded surfaces with subtle outlines and touch feedback
+- No gradients, excessive glow, or cluttered gamer UI
 - Keep gameplay controls and accessibility legible; do not sacrifice function for branding
 
-## Current changes on `omni-branding`
-- Gradle app label now displays `Omni Launcher` for release builds and `Omni Launcher (Debug)` for debug builds.
-- The existing `minebutton_color` accent changed from purple to muted green (`#A3D977`).
-- The original application ID and provider authorities are intentionally unchanged in this first pass to avoid breaking data paths, app links, saved profiles, or file providers before a migration plan exists.
+## Visual work completed on omni-branding
+- Updated release/debug display names and the app's short name to Omni Launcher / Omni.
+- Replaced the adaptive launcher icon with an original pixel-portal mark using the Omni green accent.
+- Rebuilt the launcher home layout with a brand header, Java Edition subtitle, cleaner spacing, card-style shortcuts, version/profile surface, and the existing prominent Play action.
+- Unified the color tokens and card/menu surfaces in graphite, off-white, gray, and muted green.
+- Applied the accent color to Android controls, selections, and settings theme.
+- Updated key user-facing crash, background-service, and storage/notification strings to use Omni branding.
+- Kept the original application ID and provider authorities unchanged to avoid breaking data paths, app links, saved profiles, or file providers.
 
-## Next implementation steps
-1. Inspect the main activity and home-screen layouts before changing navigation or layout structure.
-2. Create original Omni Launcher launcher icons for all mipmap densities and the Play Store artwork. Do not reuse Amethyst branding in a release.
-3. Rework the home screen around a clear primary **Play** action, selected Minecraft version, installed profile, and concise status.
-4. Restyle version selection, installations/mods, memory/performance settings, and touch-control editor using the same color tokens.
-5. Review all user-facing references to Amethyst/PojavLauncher. Keep legal notices, credits, license texts, and upstream attribution intact.
-6. Run Android CI/build checks and test on an actual Android device before producing an APK.
+## Next phase: implementation and verification
+1. Review launcher behavior and connect the new visual states to the existing profile/version data without duplicating controls or changing game launch behavior.
+2. Audit remaining user-facing strings and the non-adaptive legacy icon assets.
+3. Restyle remaining screens (profile editor, mod/installation screens, memory/performance settings, and touch-control editor) consistently.
+4. Run Android CI/build checks and resolve resource or compatibility errors.
+5. Test on a real Android device before producing an APK.
 
 ## Important release notes
 - This project is based on Amethyst-Android/PojavLauncher-derived code. Preserve all required license notices and third-party credits.
