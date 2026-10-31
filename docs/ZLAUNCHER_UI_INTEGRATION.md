@@ -66,3 +66,15 @@ La primera entrega solo se considera lista cuando la pantalla inicial nativa se 
 ## Validación pendiente
 
 Los cambios se han guardado en la rama de trabajo y están incluidos en el PR abierto. Aún no se ha verificado una compilación Android ni una prueba en dispositivo/emulador. La conexión visual/código no equivale a confirmar que todas las pantallas compilen o funcionen en ejecución.
+
+
+## Revisión de pantallas — correcciones aplicadas
+
+- **Inicio vertical/horizontal:** los siete accesos usan tarjetas redondeadas y feedback táctil coherentes. Se comprobó que ambos layouts contienen todos los IDs que consume `MainMenuFragment`, incluido `library_button`.
+- **Tema global:** texto y texto de ayuda pasan a colores claros sobre el fondo oscuro; el acento usa el violeta de ZLauncher.
+- **Búsqueda:** se corrigió el contraste del campo de búsqueda y se eliminó el texto de ejemplo que podía aparecer como estado inicial.
+- **Selector de archivos:** la lista ahora usa constraints laterales explícitos; la ruta larga se limita a una línea y muestra puntos suspensivos en vez de desbordarse.
+- **Biblioteca de modpacks:** el contenedor y los dos botones usan anchos compatibles con ConstraintLayout y límites laterales explícitos.
+- **Recursos:** se verificaron las cadenas de biblioteca en inglés/español, la presencia del icono y fondo usados, y el balance de etiquetas XML en las pantallas revisadas.
+
+**Estado de validación:** las comprobaciones estáticas de recursos/IDs y estructura XML no reportaron errores en los archivos revisados. GitHub no muestra ejecuciones de Actions para la rama y no hay una compilación Android confirmada; por tanto, aún falta ejecutar `./gradlew :app_pojavlauncher:assembleDebug` y probar el APK en dispositivo/emulador.
