@@ -51,3 +51,18 @@ Adaptar la dirección visual del prototipo ZLauncher creado en Bolt.new al launc
 
 ## Criterio de aceptación
 La primera entrega solo se considera lista cuando la pantalla inicial nativa se ve coherente con ZLauncher, las acciones conectadas llevan a flujos reales del launcher, la rama original permanece sin cambios y existe evidencia verificable del resultado de compilación.
+
+
+## Pantallas adicionales — fase de rediseño
+
+- **Inicio:** conserva el selector real de versión, edición del perfil, controles, instalación de JAR, registros y carpeta del juego.
+- **Biblioteca de modpacks:** nuevo acceso desde Inicio en orientación vertical y horizontal; abre el fragmento nativo `ModpackCreateFragment`. Desde ahí, Explorar modpacks abre la búsqueda conectada a CurseForge y la importación ZIP/.mrpack usa el selector del sistema y el flujo de instalación existente.
+- **Versiones:** se mantiene el selector nativo y la lista real de versiones/modloaders; se actualizó la presentación de las filas y de la pantalla de selección.
+- **Perfiles:** el editor existente conserva guardado, borrado, selección de versión, runtime, renderer, carpeta del juego y controles; se pulieron colores de texto y campos.
+- **Archivos:** el selector existente mantiene navegación de carpetas, creación y selección; se mejoró la presentación de la ruta actual.
+- **Ajustes:** el botón de ajustes de la actividad sigue abriendo `LauncherPreferenceFragment`; la pantalla usa el tema oscuro común del launcher.
+- **Búsqueda de modpacks:** se mantiene búsqueda, filtros por versión, estados de carga/error y adaptador real; se ajustaron la tarjeta superior y el espacio de la lista.
+
+## Validación pendiente
+
+Los cambios se han guardado en la rama de trabajo y están incluidos en el PR abierto. Aún no se ha verificado una compilación Android ni una prueba en dispositivo/emulador. La conexión visual/código no equivale a confirmar que todas las pantallas compilen o funcionen en ejecución.
