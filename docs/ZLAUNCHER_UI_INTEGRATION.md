@@ -19,12 +19,20 @@ Adaptar la dirección visual del prototipo ZLauncher creado en Bolt.new al launc
 - Navegación prevista: Inicio, Versiones, Mods, Biblioteca, Descargas, Perfiles y Ajustes.
 
 ## Estrategia de integración
-1. Inspeccionar las actividades, layouts, temas, navegación y flujo de lanzamiento existentes.
-2. Identificar la pantalla inicial real y las APIs internas disponibles para versiones, perfiles, mods, archivos y ejecución.
-3. Crear primero una capa visual nativa con componentes Android existentes; evitar migraciones grandes de framework al comienzo.
-4. Conectar cada acción a la función real correspondiente. Si una función no está implementada, mostrar claramente su estado en desarrollo en lugar de simular éxito.
-5. Adaptar los layouts a móvil/tableta y probar navegación, accesibilidad, orientación y tamaños de pantalla.
-6. Ejecutar el workflow Android existente y verificar los resultados antes de afirmar que compila.
+1. Inspeccionar las actividades, layouts, temas, navegación y flujo de lanzamiento existentes. **Hecho:** la entrada pasa por `TestStorageActivity` y después abre `LauncherActivity`; `MainMenuFragment` es la pantalla principal y ya contiene el flujo real de lanzamiento.
+2. Identificar las APIs internas disponibles para versiones, perfiles, mods, archivos y ejecución. **Hecho:** el selector de versión, edición de perfil, instalación de `.jar`, apertura de carpeta, controles y acción JUGAR ya tienen callbacks existentes.
+3. Crear una capa visual nativa con componentes Android existentes. **Primer paso hecho:** cabecera de marca ZLauncher, paleta grafito/violeta y botones de acción con tarjetas redondeadas en `fragment_launcher.xml`.
+4. Mantener las acciones existentes conectadas al comportamiento real. **Hecho en el diseño actual:** no se reemplazó `MainMenuFragment` ni su lógica de lanzamiento.
+5. Adaptar a móvil/tableta y comprobar accesibilidad, orientación y tamaños de pantalla. **Pendiente de pruebas en dispositivo/emulador.**
+6. Ejecutar el workflow Android existente y verificar los resultados antes de afirmar que compila. **Pendiente:** el endpoint de Actions no devolvió ejecuciones; no se ha confirmado una compilación de esta rama.
+
+## Cambios ya guardados en esta rama
+- Se añadió la cabecera visual nativa `ZLauncher` y el subtítulo en español.
+- Se aplicó una paleta sin degradados: fondo casi negro, superficies grafito y acento violeta.
+- Las acciones de la pantalla principal ahora usan superficies redondeadas oscuras con feedback táctil.
+- Se cambiaron los nombres visibles de las variantes Android a `ZLauncher` / `ZLauncher (Debug)`.
+- Se tradujeron a español algunas etiquetas de la pantalla principal, incluido el botón `JUGAR`.
+- Se conservó el `applicationId` original para evitar una migración accidental de identidad de paquete y datos de instalación.
 
 ## Mapeo inicial de pantallas
 - **Inicio:** perfil seleccionado, versión instalada/seleccionada y botón de jugar conectado al flujo real del launcher.
