@@ -103,12 +103,23 @@
 				android:background="@drawable/background_card"
 				android:foreground="?attr/selectableItemBackground"
 				android:layout_marginHorizontal="@dimen/_8sdp"
+				android:id="@+id/library_button"
+				style="@style/LauncherMenuButton.Universal"
+				android:layout_width="match_parent"
+				android:drawableStart="@drawable/ic_folder"
+				android:text="@string/zlauncher_library"
+				app:layout_constraintTop_toBottomOf="@id/custom_control_button" />
+
+			<com.kdt.mcgui.LauncherMenuButton
+				android:background="@drawable/background_card"
+				android:foreground="?attr/selectableItemBackground"
+				android:layout_marginHorizontal="@dimen/_8sdp"
 				android:id="@+id/install_jar_button"
 				style="@style/LauncherMenuButton.Universal"
 				android:layout_width="match_parent"
 				android:drawableStart="@drawable/ic_menu_install_jar"
 				android:text="@string/main_install_jar_file"
-				app:layout_constraintTop_toBottomOf="@id/custom_control_button" />
+				app:layout_constraintTop_toBottomOf="@id/library_button" />
 
 			<com.kdt.mcgui.LauncherMenuButton
 				android:background="@drawable/background_card"
