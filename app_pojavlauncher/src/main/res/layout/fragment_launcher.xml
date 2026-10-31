@@ -55,6 +55,9 @@
 					android:fontFamily="sans-serif"/>
 			</LinearLayout>
 			<com.kdt.mcgui.LauncherMenuButton
+				android:background="@drawable/background_card"
+				android:foreground="?attr/selectableItemBackground"
+				android:layout_marginHorizontal="@dimen/_8sdp"
 				android:id="@+id/news_button"
 				style="@style/LauncherMenuButton.Universal"
 				android:layout_width="0dp"
@@ -72,6 +75,9 @@
 				app:layout_constraintEnd_toEndOf="@id/center_guideline"
 				app:layout_constraintBottom_toBottomOf="@id/news_button"/>
 			<com.kdt.mcgui.LauncherMenuButton
+				android:background="@drawable/background_card"
+				android:foreground="?attr/selectableItemBackground"
+				android:layout_marginHorizontal="@dimen/_8sdp"
 				android:id="@+id/discord_button"
 				style="@style/LauncherMenuButton.Universal"
 				android:layout_width="0dp"
@@ -83,6 +89,9 @@
 
 
 			<com.kdt.mcgui.LauncherMenuButton
+				android:background="@drawable/background_card"
+				android:foreground="?attr/selectableItemBackground"
+				android:layout_marginHorizontal="@dimen/_8sdp"
 				android:id="@+id/custom_control_button"
 				style="@style/LauncherMenuButton.Universal"
 				android:layout_width="match_parent"
@@ -91,6 +100,9 @@
 				app:layout_constraintTop_toBottomOf="@id/news_button" />
 
 			<com.kdt.mcgui.LauncherMenuButton
+				android:background="@drawable/background_card"
+				android:foreground="?attr/selectableItemBackground"
+				android:layout_marginHorizontal="@dimen/_8sdp"
 				android:id="@+id/install_jar_button"
 				style="@style/LauncherMenuButton.Universal"
 				android:layout_width="match_parent"
@@ -99,6 +111,9 @@
 				app:layout_constraintTop_toBottomOf="@id/custom_control_button" />
 
 			<com.kdt.mcgui.LauncherMenuButton
+				android:background="@drawable/background_card"
+				android:foreground="?attr/selectableItemBackground"
+				android:layout_marginHorizontal="@dimen/_8sdp"
 				android:id="@+id/share_logs_button"
 				style="@style/LauncherMenuButton.Universal"
 				android:layout_width="match_parent"
@@ -107,6 +122,9 @@
 				app:layout_constraintTop_toBottomOf="@id/install_jar_button" />
 
 			<com.kdt.mcgui.LauncherMenuButton
+				android:background="@drawable/background_card"
+				android:foreground="?attr/selectableItemBackground"
+				android:layout_marginHorizontal="@dimen/_8sdp"
 				android:id="@+id/open_files_button"
 				style="@style/LauncherMenuButton.Universal"
 				android:layout_width="match_parent"
