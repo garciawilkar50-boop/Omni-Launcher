@@ -23,7 +23,7 @@
     <string name="toast_3">Exit</string>
     -->
     <!-- MCLauncherActivity: Tabs -->
-    <string name="mcl_tab_wiki">Wiki</string>
+    <string name="mcl_tab_wiki">Guía</string>
     <!-- MCLauncherActivity: Account status -->
     <!-- MCLauncherActivity: Strings -->
     <string name="mcl_launch_cleancache">Limpiando archivos caché</string>
@@ -31,7 +31,7 @@
     <string name="mcl_launch_downloading_progress">"Descargando %s (%.2f MB / %.2f MB)"</string>
     <string name="mcl_launch_download_assets">Preparando para descargar los recursos</string>
     <string name="mcl_options">Opciones</string>
-    <string name="mcl_option_customcontrol">Controles personalizados</string>
+    <string name="mcl_option_customcontrol">Controles</string>
     <string name="mcl_setting_title_use_surface_view">Usar representación de superficie alternativa</string>
     <string name="mcl_setting_subtitle_use_surface_view">Podría mejorar el rendimiento en escenarios relacionados con la GPU.</string>
     <string name="mcl_setting_title_ignore_notch">Ignorar notch (Para teléfonos con pantalla irregular)</string>
@@ -119,9 +119,9 @@
     <string name="customctrl_addsubbutton">Añadir sub-botón</string>
     <string name="customctrl_selectdefault">Seleccionar controles por defecto</string>
     <string name="customctrl_export">Exportar controles</string>
-    <string name="main_share_logs">Compartir archivo de registro</string>
-    <string name="main_install_jar_file">Ejecutar un .jar</string>
-    <string name="main_play">Jugar</string>
+    <string name="main_share_logs">Compartir registros</string>
+    <string name="main_install_jar_file">Instalar archivo .jar</string>
+    <string name="main_play">JUGAR</string>
     <string name="autoram_info_msg">Memoria establecida a %d MB</string>
     <string name="mcl_setting_check_libraries">Comprobar las librerías después de descargar</string>
     <string name="mcl_setting_check_libraries_subtitle">Esta opción fuerza al launcher a comprobar si el hash de la librería está disponible. Evita descargas rotas.</string>
@@ -345,7 +345,7 @@
     <string name="preference_remap_controller_description">Te permite modificar las teclas del teclado asignadas a cada botón del controlador</string>
     <string name="mcl_button_discord">Discord</string>
     <string name="ltw_render_distance_warning_msg">Su GPU no es capaz de renderizar más de 7 de distancia sin usar Sodium o mods similares. La distancia de renderizado será reducido automáticamente cuando haga click en \"OK\".</string>
-    <string name="mcl_button_open_directory">Abrir directorio del juego</string>
+    <string name="mcl_button_open_directory">Carpeta del juego</string>
     <string name="local_login_bad_username_title">Nombre de usuario inadecuado</string>
     <string name="local_login_bad_username_text">El nombre de usuario debe de ser entre 3 a 16 caracteres, y solo contener letras latinas, números de 0 a 9 y guiones bajos.</string>
     <string name="quick_setting_title">Configuraciones rápidas</string>
