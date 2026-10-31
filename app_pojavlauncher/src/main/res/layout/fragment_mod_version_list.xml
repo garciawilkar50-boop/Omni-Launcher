@@ -5,7 +5,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="@color/background_app"
-    android:paddingHorizontal="@dimen/fragment_padding_medium">
+    android:paddingHorizontal="@dimen/fragment_padding_medium"
+    android:paddingTop="@dimen/_8sdp">
 
 
     <TextView
@@ -13,9 +14,9 @@
         style="@style/TextAppearance.AppCompat.Title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:gravity="center"
-        android:layout_marginTop="@dimen/padding_large"
+        android:textAlignment="viewStart"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/_18sdp"
         android:text="@string/forge_dl_select_version" />
 
     <View
