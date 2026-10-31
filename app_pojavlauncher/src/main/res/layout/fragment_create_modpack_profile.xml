@@ -12,7 +12,7 @@
 
     <View
         android:id="@+id/create_modpack_profile_menu"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="@dimen/_200sdp"
 
         android:background="@drawable/background_card"
@@ -21,12 +21,13 @@
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 
     <com.kdt.mcgui.MineButton
         android:id="@+id/button_browse_modpacks"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Explorar modpacks"
         android:textSize="@dimen/_13ssp"
@@ -42,7 +43,7 @@
 
     <com.kdt.mcgui.MineButton
         android:id="@+id/button_import_modpack"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Importar ZIP o .mrpack"
         android:textSize="@dimen/_12ssp"
