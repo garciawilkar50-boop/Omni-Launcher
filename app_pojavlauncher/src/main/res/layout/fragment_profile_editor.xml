@@ -13,7 +13,8 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:fadeScrollbars="true"
-        android:scrollbarThumbVertical="@color/minebutton_color">
+        android:scrollbarThumbVertical="@color/minebutton_color"
+        android:clipToPadding="false">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -55,6 +56,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/padding_large"
                 android:background="@drawable/background_line"
+                android:textColor="@color/primary_text"
+                android:textColorHint="@color/secondary_text"
                 android:textSize="@dimen/_13ssp"
 
                 android:ems="10"
