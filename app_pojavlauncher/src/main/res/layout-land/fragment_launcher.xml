@@ -28,13 +28,42 @@
                 android:layout_height="0dp"
                 android:orientation="vertical"
                 app:layout_constraintGuide_percent="0.5"/>
+            <LinearLayout
+                android:id="@+id/zlauncher_brand_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/_18sdp"
+                android:paddingEnd="@dimen/_18sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                app:layout_constraintTop_toTopOf="parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ZLauncher"
+                    android:textColor="@color/primary_text"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:text="Tu mundo Java, listo para jugar."
+                    android:textColor="@color/secondary_text"
+                    android:textSize="12sp"
+                    android:fontFamily="sans-serif"/>
+            </LinearLayout>
             <com.kdt.mcgui.LauncherMenuButton
                 android:id="@+id/news_button"
                 style="@style/LauncherMenuButton.Universal"
+                android:background="@drawable/background_card"
+                android:foreground="?attr/selectableItemBackground"
                 android:layout_width="0dp"
                 android:drawableStart="@drawable/ic_menu_news"
                 android:text="@string/mcl_tab_wiki"
-                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/zlauncher_brand_header"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/social_divider"/>
             <View
@@ -51,7 +80,7 @@
                 android:layout_width="0dp"
                 android:drawableStart="@drawable/ic_discord"
                 android:text="@string/mcl_button_discord"
-                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/zlauncher_brand_header"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/social_divider"/>
 
